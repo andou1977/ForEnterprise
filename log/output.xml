@@ -1,53 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-10-18T16:45:24.112690" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-10-18T17:11:08.709247" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\PourEntreprise\tests\ui\Login.robot">
-<test id="s1-t1" name="Lancer La connexion" line="7">
-<kw name="Se connecter" owner="Login">
-<kw name="Open Browser" owner="RPA.Browser">
-<msg time="2025-10-18T16:45:24.529095" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>${Url}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-18T16:45:24.528098" elapsed="6.201728"/>
+<test id="s1-t1" name="Lancer La connexion" line="6">
+<kw name="Se connecter">
+<msg time="2025-10-18T17:11:08.740070" level="FAIL">No keyword with name 'Se connecter' found.</msg>
+<status status="FAIL" start="2025-10-18T17:11:08.739071" elapsed="0.000999">No keyword with name 'Se connecter' found.</status>
 </kw>
-<kw name="Input Text" owner="RPA.Browser">
-<msg time="2025-10-18T16:45:30.729826" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<arg>id=user-name</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T16:45:30.729826" elapsed="0.175476"/>
-</kw>
-<kw name="Input Password" owner="RPA.Browser">
-<msg time="2025-10-18T16:45:30.906307" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-10-18T16:45:30.915866" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>id=password</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T16:45:30.906307" elapsed="0.030133"/>
-</kw>
-<kw name="Click Button" owner="RPA.Browser">
-<msg time="2025-10-18T16:45:30.936440" level="INFO">Clicking button 'id=login-button'.</msg>
-<arg>id=login-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T16:45:30.936440" elapsed="0.112022"/>
-</kw>
-<status status="PASS" start="2025-10-18T16:45:24.527100" elapsed="6.521362"/>
-</kw>
-<status status="PASS" start="2025-10-18T16:45:24.527100" elapsed="6.521362"/>
+<status status="FAIL" start="2025-10-18T17:11:08.737651" elapsed="0.002419">No keyword with name 'Se connecter' found.</status>
 </test>
-<status status="PASS" start="2025-10-18T16:45:24.115688" elapsed="6.934281"/>
+<status status="FAIL" start="2025-10-18T17:11:08.711302" elapsed="0.028768"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-18T16:45:24.477817" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+<msg time="2025-10-18T17:11:08.736649" level="ERROR">Error in file 'C:\Users\GENIUS\IdeaProjects\PourEntreprise\tests\ui\Login.robot' on line 2: Resource file '..\resources\keywords\Login.robot' does not exist.</msg>
 </errors>
 </robot>
