@@ -1,0 +1,17 @@
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install robotframework
+pip install robotframework-seleniumlibrary
+pip install robotframework-jira
+pip install robotframework-metrics
+pip install robotframework-databaselibrary
+pip install pymysql
+pip install robotframework-requests
+pip install robotframework-datadriver
+pip install robotframework-excellibrary
+pip install robotframework-mainframe3270
+pip install rpaframework         # si tu utilises RPA.Browser
+pip install coverage
+# puis
+pip freeze > requirements.txt

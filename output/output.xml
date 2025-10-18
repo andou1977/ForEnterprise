@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-10-18T16:46:13.126802" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\PourEntreprise\tests\ui\login.robot">
+<test id="s1-t1" name="Lancer La connexion" line="7">
+<kw name="Se connecter" owner="Login">
+<kw name="Open Browser" owner="RPA.Browser">
+<msg time="2025-10-18T16:46:13.516203" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-18T16:46:13.515192" elapsed="6.255794"/>
+</kw>
+<kw name="Input Text" owner="RPA.Browser">
+<msg time="2025-10-18T16:46:19.771986" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-18T16:46:19.770986" elapsed="0.215454"/>
+</kw>
+<kw name="Input Password" owner="RPA.Browser">
+<msg time="2025-10-18T16:46:19.986440" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-10-18T16:46:20.008995" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-18T16:46:19.986440" elapsed="0.051837"/>
+</kw>
+<kw name="Click Button" owner="RPA.Browser">
+<msg time="2025-10-18T16:46:20.039276" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-18T16:46:20.039276" elapsed="0.123764"/>
+</kw>
+<status status="PASS" start="2025-10-18T16:46:13.513683" elapsed="6.649357"/>
+</kw>
+<status status="PASS" start="2025-10-18T16:46:13.512683" elapsed="6.650357"/>
+</test>
+<status status="PASS" start="2025-10-18T16:46:13.128803" elapsed="7.035525"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-18T16:46:13.467145" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+</errors>
+</robot>
