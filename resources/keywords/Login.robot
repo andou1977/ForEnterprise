@@ -5,7 +5,7 @@ Library     RPA.Browser
 
 *** Keywords ***
 Se connecter
-   Open Browser  ${Url}   hghghg
+   Open Browser  ${Url}   ${Browser}
    Input Text   id=user-name   ${username}
    Input Password    id=password    ${password}
    Click Button    id=login-button
