@@ -1,51 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-10-18T17:49:40.183064" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\PourEntreprise\tests\ui\Login.robot">
+<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-10-18T19:50:52.689350" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\GENIUS\Downloads\PourEntreprise\tests\ui\Login.robot">
 <test id="s1-t1" name="Lancer La connexion" line="6">
 <kw name="Se connecter" owner="Login">
 <kw name="Open Browser" owner="RPA.Browser">
-<msg time="2025-10-18T17:49:40.681009" level="INFO">Opening browser 'hghghg' to base url 'https://www.saucedemo.com/'.</msg>
-<msg time="2025-10-18T17:49:40.683474" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-10-18T17:49:40.683474" level="FAIL">ValueError: hghghg is not a supported browser.</msg>
+<msg time="2025-10-18T19:50:53.128839" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${Url}</arg>
-<arg>hghghg</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-10-18T17:49:40.681009" elapsed="0.075221">ValueError: hghghg is not a supported browser.</status>
+<status status="PASS" start="2025-10-18T19:50:53.128839" elapsed="7.090717"/>
 </kw>
 <kw name="Input Text" owner="RPA.Browser">
+<msg time="2025-10-18T19:51:00.219556" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-10-18T17:49:40.757230" elapsed="0.000000"/>
+<status status="PASS" start="2025-10-18T19:51:00.219556" elapsed="0.099200"/>
 </kw>
 <kw name="Input Password" owner="RPA.Browser">
+<msg time="2025-10-18T19:51:00.323230" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-10-18T19:51:00.329066" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-10-18T17:49:40.757230" elapsed="0.000000"/>
+<status status="PASS" start="2025-10-18T19:51:00.318756" elapsed="0.035595"/>
 </kw>
 <kw name="Click Button" owner="RPA.Browser">
+<msg time="2025-10-18T19:51:00.354351" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-10-18T17:49:40.757230" elapsed="0.000000"/>
+<status status="PASS" start="2025-10-18T19:51:00.354351" elapsed="0.128197"/>
 </kw>
-<status status="FAIL" start="2025-10-18T17:49:40.679549" elapsed="0.077681">ValueError: hghghg is not a supported browser.</status>
+<status status="PASS" start="2025-10-18T19:50:53.127394" elapsed="7.355154"/>
 </kw>
-<status status="FAIL" start="2025-10-18T17:49:40.679549" elapsed="0.077681">ValueError: hghghg is not a supported browser.</status>
+<status status="PASS" start="2025-10-18T19:50:53.127394" elapsed="7.355154"/>
 </test>
-<status status="FAIL" start="2025-10-18T17:49:40.186779" elapsed="0.570451"/>
+<status status="PASS" start="2025-10-18T19:50:52.691670" elapsed="7.792625"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-18T17:49:40.626154" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+<msg time="2025-10-18T19:50:53.079561" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
 </errors>
 </robot>
