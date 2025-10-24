@@ -1,5 +1,5 @@
 #pour entreprise parce qu'il faut toujours donné les version
-
+#obligation de toujours mettre les version en entreprise
 #robotframework==6.1.1
 #robotframework-seleniumlibrary==6.7.2
 #selenium==4.26.0
