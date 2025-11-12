@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2025-10-28T15:08:37.967376" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2025-10-28T16:15:26.468683" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests\ui\Login.robot">
 <test id="s1-t1" name="Lancer La connexion" line="6">
 <kw name="Se connecter" owner="Login">
 <kw name="Open Browser" owner="RPA.Browser">
-<msg time="2025-10-28T15:08:38.402992" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-10-28T16:15:27.136582" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${Url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-28T15:08:38.402992" elapsed="7.108661"/>
+<status status="PASS" start="2025-10-28T16:15:27.136582" elapsed="7.119176"/>
 </kw>
 <kw name="Input Text" owner="RPA.Browser">
-<msg time="2025-10-28T15:08:45.512777" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-10-28T16:15:34.255758" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:08:45.511653" elapsed="0.080241"/>
+<status status="PASS" start="2025-10-28T16:15:34.255758" elapsed="0.098840"/>
 </kw>
 <kw name="Input Password" owner="RPA.Browser">
-<msg time="2025-10-28T15:08:45.592896" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-10-28T15:08:45.604902" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-10-28T16:15:34.354598" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-10-28T16:15:34.373206" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:08:45.591894" elapsed="0.046526"/>
+<status status="PASS" start="2025-10-28T16:15:34.354598" elapsed="0.046257"/>
 </kw>
 <kw name="Click Button" owner="RPA.Browser">
-<msg time="2025-10-28T15:08:45.639421" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-10-28T16:15:34.400855" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:08:45.638420" elapsed="0.098559"/>
+<status status="PASS" start="2025-10-28T16:15:34.400855" elapsed="0.176174"/>
 </kw>
-<status status="PASS" start="2025-10-28T15:08:38.400993" elapsed="7.336986"/>
+<status status="PASS" start="2025-10-28T16:15:27.135578" elapsed="7.441451"/>
 </kw>
 <tag>PRJ-7201587-2</tag>
-<status status="PASS" start="2025-10-28T15:08:38.399992" elapsed="7.337987"/>
+<status status="PASS" start="2025-10-28T16:15:27.133570" elapsed="7.443459"/>
 </test>
-<status status="PASS" start="2025-10-28T15:08:37.969377" elapsed="7.768602"/>
+<status status="PASS" start="2025-10-28T16:15:26.472833" elapsed="8.104196"/>
 </suite>
 <statistics>
 <total>
@@ -50,6 +50,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-28T15:08:38.357447" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+<msg time="2025-10-28T16:15:27.095287" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
 </errors>
 </robot>
