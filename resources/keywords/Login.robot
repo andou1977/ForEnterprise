@@ -1,7 +1,7 @@
 #keyword
 *** Settings ***
 Resource    ../variable/Login.robot
-Library     RPA.Browser
+Library    RPA.Browser.Selenium
 
 *** Keywords ***
 Se connecter
