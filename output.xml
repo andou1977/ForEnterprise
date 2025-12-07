@@ -1,51 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2025-10-28T15:29:44.714157" rpa="false" schemaversion="5">
-<suite id="s1" name="ForEnterprise" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise">
-<suite id="s1-s1" name="Tests" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests">
-<suite id="s1-s1-s1" name="Ui" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests\ui">
-<suite id="s1-s1-s1-s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests\ui\Login.robot">
-<test id="s1-s1-s1-s1-t1" name="Lancer La connexion" line="6">
+<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2025-12-07T21:38:12.893567" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests">
+<suite id="s1-s1" name="Ui" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests\ui">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\GENIUS\IdeaProjects\ForEnterprise\tests\ui\Login.robot">
+<test id="s1-s1-s1-t1" name="Lancer La connexion" line="5">
 <kw name="Se connecter" owner="Login">
-<kw name="Open Browser" owner="RPA.Browser">
-<msg time="2025-10-28T15:29:45.070422" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<kw name="Open Browser" owner="RPA.Browser.Selenium">
+<msg time="2025-12-07T21:38:14.471047" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${Url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-28T15:29:45.070422" elapsed="6.173691"/>
+<status status="PASS" start="2025-12-07T21:38:14.470035" elapsed="11.536485"/>
 </kw>
-<kw name="Input Text" owner="RPA.Browser">
-<msg time="2025-10-28T15:29:51.244113" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<kw name="Input Text" owner="RPA.Browser.Selenium">
+<msg time="2025-12-07T21:38:26.007512" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:29:51.244113" elapsed="0.102388"/>
+<status status="PASS" start="2025-12-07T21:38:26.006520" elapsed="0.116786"/>
 </kw>
-<kw name="Input Password" owner="RPA.Browser">
-<msg time="2025-10-28T15:29:51.352480" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2025-10-28T15:29:51.359520" level="INFO">Temporally setting log level to: NONE</msg>
+<kw name="Input Password" owner="RPA.Browser.Selenium">
+<msg time="2025-12-07T21:38:26.124302" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-07T21:38:26.150467" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:29:51.346501" elapsed="0.033226"/>
+<status status="PASS" start="2025-12-07T21:38:26.123306" elapsed="0.063764"/>
 </kw>
-<kw name="Click Button" owner="RPA.Browser">
-<msg time="2025-10-28T15:29:51.379727" level="INFO">Clicking button 'id=login-button'.</msg>
+<kw name="Click Button" owner="RPA.Browser.Selenium">
+<msg time="2025-12-07T21:38:26.187070" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-28T15:29:51.379727" elapsed="0.145427"/>
+<status status="PASS" start="2025-12-07T21:38:26.187070" elapsed="0.082992"/>
 </kw>
-<status status="PASS" start="2025-10-28T15:29:45.070422" elapsed="6.454732"/>
+<status status="PASS" start="2025-12-07T21:38:14.469082" elapsed="11.800980"/>
 </kw>
 <tag>PRJ-7201587-2</tag>
-<status status="PASS" start="2025-10-28T15:29:45.070422" elapsed="6.454732"/>
+<status status="PASS" start="2025-12-07T21:38:14.467843" elapsed="11.803235"/>
 </test>
-<status status="PASS" start="2025-10-28T15:29:44.730016" elapsed="6.795138"/>
+<status status="PASS" start="2025-12-07T21:38:12.921030" elapsed="13.351046"/>
 </suite>
-<status status="PASS" start="2025-10-28T15:29:44.730016" elapsed="6.795138"/>
+<status status="PASS" start="2025-12-07T21:38:12.918019" elapsed="13.356412"/>
 </suite>
-<status status="PASS" start="2025-10-28T15:29:44.730016" elapsed="6.795138"/>
-</suite>
-<status status="PASS" start="2025-10-28T15:29:44.714157" elapsed="6.810997"/>
+<status status="PASS" start="2025-12-07T21:38:12.894576" elapsed="13.380364"/>
 </suite>
 <statistics>
 <total>
@@ -55,13 +52,11 @@
 <stat pass="1" fail="0" skip="0">PRJ-7201587-2</stat>
 </tag>
 <suite>
-<stat name="ForEnterprise" id="s1" pass="1" fail="0" skip="0">ForEnterprise</stat>
-<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">ForEnterprise.Tests</stat>
-<stat name="Ui" id="s1-s1-s1" pass="1" fail="0" skip="0">ForEnterprise.Tests.Ui</stat>
-<stat name="Login" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">ForEnterprise.Tests.Ui.Login</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Ui" id="s1-s1" pass="1" fail="0" skip="0">Tests.Ui</stat>
+<stat name="Login" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.Ui.Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-28T15:29:45.032832" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
 </errors>
 </robot>
